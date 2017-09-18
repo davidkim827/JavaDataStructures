@@ -1,0 +1,13 @@
+#Steve Davis
+1200
+*John Kanet
+35.5
+50
+*Matthew Williams
+25
+40
+#Alex Bowers
+5000
+*Atanas Radenski
+-45
+80
