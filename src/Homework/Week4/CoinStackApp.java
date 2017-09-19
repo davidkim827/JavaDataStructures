@@ -9,15 +9,20 @@ import java.util.Scanner;
  */
 public class CoinStackApp {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("coins.txt");
-        Scanner read = new Scanner(file);
+        Scanner keyBoard = new Scanner(System.in);
+        String file;
+
+        System.out.print("Name of file to analyze? ");
+        file = keyBoard.next();
+
+        Scanner read = new Scanner(new File(file));
 
         CoinStack penny = new CoinStack();
         CoinStack nickel = new CoinStack();
         CoinStack dime = new CoinStack();
         CoinStack quarter = new CoinStack();
 
-        while (read.hasNextLine()) {
+        while (read.hasNext()) {
             int nextCoin = Integer.parseInt(read.next());
             if (nextCoin == 1)
                 penny.push(nextCoin);
