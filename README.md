@@ -5,7 +5,7 @@ Please excuse inefficiencies and atypical coding practices. This is my first tim
 
 The following is the concepts I have learned over the weeks:
 
-Week 1: "Review"
-Week 2: Recursion
-Week 3: Stacks (array implementation)
-Week 4: Stacks (linked list implementation)
+Week 1: "Review" \n
+Week 2: Recursion \n
+Week 3: Stacks (array implementation) \n
+Week 4: Stacks (linked list implementation) \n
