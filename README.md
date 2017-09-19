@@ -1,7 +1,4 @@
 # JavaDataStructures
-Everything I have learned from data structures class.
+All coded material from Java Data Structures class at NVCC (CSC202).
 
-
-The code in this repository may seem atypical because I had never coded in Java excluding my practice repository located in:
-
-https://github.com/davidkim827/Practice
+Please excuse inefficiencies and atypical coding practices. This is my first time coding object orientation as well as the Java language (excluding my practice repository located here: https://github.com/davidkim827/Practice).
