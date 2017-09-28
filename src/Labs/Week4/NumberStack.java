@@ -1,7 +1,5 @@
 package Labs.Week4;
 
-import ClassExample.LNumber;
-
 /**
  * Created by dk on 9/14/2017.
  */

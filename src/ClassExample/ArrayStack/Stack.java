@@ -1,4 +1,4 @@
-package ClassExample;
+package ClassExample.ArrayStack;
 
 /**
  * Created by dk on 9/7/2017.

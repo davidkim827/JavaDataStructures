@@ -1,4 +1,4 @@
-package ClassExample;
+package ClassExample.StackLinkedList;
 
 /**
  * Created by dk on 9/14/2017.
