@@ -1,4 +1,4 @@
-package Homework.Week5Week6_MultiThreading;
+package Homework.Week5_Week6_MultiThreading;
 
 /**
  * Created by dk on 9/29/2017.
