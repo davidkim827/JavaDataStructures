@@ -30,7 +30,7 @@ public class NumberQueueTester {
             int avgMinutes = 1 + r.nextInt(5);
             if (avgMinutes == 5 && nq.size() < 10) {
                 nq.enqueue(r.nextInt(10));
-                System.out.println((timeArrivedArray[countTimeArrived] = t) + "This is time Arrived");
+                System.out.println((timeArrivedArray[countTimeArrived] = t) + " This is time Arrived");
                 countTimeArrived++;
                 customersServed++;
                 if (maxSize < nq.size())
@@ -44,7 +44,7 @@ public class NumberQueueTester {
             }
             if (!nq.isEmpty() && t % 3 == 0) {
                 nq.dequeue();
-                System.out.println((timeLeftArray[countTimeLeft] = t) + "This is time Left");
+                System.out.println((timeLeftArray[countTimeLeft] = t) + " This is time Left");
                 countTimeLeft++;
             }
         }
@@ -76,7 +76,7 @@ public class NumberQueueTester {
 
         System.out.println("Restaurant served " + (customersServed - customersNotServed) + ".");
         System.out.println("Customers NOT served after closing: " + customersNotServed);
-        System.out.println("Customers Left: " + customerLeft);
+        System.out.println("Customers Left because full: " + customerLeft);
 
         if (restaurantFull == 0)
             System.out.println("Restaurant had max queue size of " + maxSize + ".");
@@ -84,7 +84,7 @@ public class NumberQueueTester {
             System.out.println("Restaurant was full " + restaurantFull + " times.");
 
         System.out.printf("\nAverage waiting time: %1.3f minutes", average);
-        System.out.printf("\nLongest waiting time: %1d minutes", waitingTime);
+        System.out.printf("\nLongest waiting time: %1d minutes\n", waitingTime);
 
 
 
