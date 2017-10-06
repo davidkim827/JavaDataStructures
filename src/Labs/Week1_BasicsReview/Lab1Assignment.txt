@@ -1,0 +1,55 @@
+Part 1 (5 points):
+Design a program named Array2DPrint.java and implement the method specified below:
+
+   public static void print(int[][] arr)
+
+This method prints the elements in a N x N two dimensional integer array as shown below:
+-------------
+| X | O |   |
+-------------
+| O |   | X |
+-------------
+|   | X | O |
+-------------
+
+If the value of an element is 1, place a symbol X in its corresponding location, and O for a value of 0. For all other values, place an empty space in its location. For example, in the above sample run, the value of the element in [0][0] is 1, so X is displayed on [0][0] location. 
+
+Then test your program as follows (int the main method):
+1. Define a 3 x 3 integer array
+2. Randomly assign numbers between 0 and 3, inclusive, to the elements of the array
+3. Call print method
+
+
+Part 2 (5 points):
+Design a java program named WordCount.java to count the occurrence of a particular word in a file. Both file and the word are passed as arguments to the main method.
+
+data file: wordCount.txt
+
+Sample output:
+
+The word "java" appears 7 timed in in the file.
+
+Part 3: (10 points)
+Design a java program named GradeCount.java to read data from a gradebook (gradebook.txt contains grades only) and count how many students are in each of the following categories:
+90 - 100
+80 - 89
+70 - 79
+60 - 69
+Below 60
+
+And printout the number of students in each category.
+
+Here is sample output:
+
+Category      No. of Students
+[90 - 100]         5
+[80 - 89]          10
+[70 - 79]          4
+[60 - 69]          2
+[<60]              1
+
+Here is the sample data file:
+
+82 100 88 90 56 76 67 60 2000
+98 65 90 85 67 81 93 86 88B
+87 70 88 78 84 76 81 89 

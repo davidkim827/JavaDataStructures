@@ -1,0 +1,50 @@
+Problem 1 (10 points)
+
+Write a program named LetterPermutation.java that prompts for a positive integer (get this number from cmd argument list and displays all 
+permutations of the letters "L" and "R" of that length. For example, if the length is 3 your program should display: 
+
+LLL
+LLR
+LRL
+LRR
+RLL
+RLR
+RRL
+RRR
+
+
+Problem 2 (10 points)
+Write a method for mutliply(a, b), where a and b are both positive
+integers, but you can only use the + or - operators. Then write a program named Multiply.java to test
+your method. Your program is going to accept two operands a and b from the Cmd Argument list.
+
+
+Problem 3 (5 points)
+Write a program named NumberPermutation.java that prompts for a positive integer and displays all permutations of the odd digits of that length. 
+Display these values in ascending order. For example, if the length is 3, your program should display: 
+
+111
+113
+115
+117
+119
+131
+133
+135
+...
+
+Problem 4 (5 points)
+In computer science, algorithmic efficiency is the properties of an algorithm which relate to the amount of computational resources used by the algorithm. An algorithm must be analyzed to determine its resource usage. For maximum efficiency we wish to minimize resource usage. However, the various resources (e.g. time, space) cannot be compared directly, so which of two algorithms is considered to be more efficient often depends on which measure of efficiency is considered the most important, e.g. the requirement for high speed, minimum memory usage or some other measure of performance.
+
+In this assignment, we are going to evaluate three gcf methods. The greatest common factor between 2 numbers is the largest factor that they have in common. Three algorithms to find GCF are provided in the GCFAlgorith.java. You are required to design a program to evaluate the efficiency of the three algorithms. For this assignment, we consider the time consumed by each algorithm to find GCF for two numbers:
+
+1.  Create a java program named GCFEvaluator.java
+2. Test and evaluate each algorithm
+3. Create a text file (results.txt) in the same folder and summarize the times for each testing as shown in 
+the following table.
+ -------------------------------------------
+| a, b  |    gcf1    |    gcf2     |   gcf3  |
+--------------------------------------------
+| 2,  6 |   568650   |   55555     |  54625  |
+| 200,1 |   968650   |   58555     |  59625  |
+----------------------------------------------

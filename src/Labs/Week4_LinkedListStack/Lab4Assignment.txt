@@ -1,0 +1,14 @@
+This is the same as Homework 3. However, you are required to implement stack by using LLNode and Linked List:
+
+Two stacks of positive integers are needed, both containing integers with values less than or equal to 1000. One stack contains even integers, the other contains odd integers. The total number of elements in the combined stacks is never more than 200 at anytime. but we cannot predict how many are in each stack. (All of the elements could be in one stack, they could be evenly divided, both stacks could be empty, and so on).
+
+Design ADT (named NumberStack.java) (which is stack in this case).
+
+write an application, generate random 500 numbers between 0 and 5000, then push them (valid numbers) to their corresponding stack.
+
+print the numbers stored in each stack.
+
+
+Classe file include (you must use the names as specified):
+NumberStack.java
+NumberStackTester.java

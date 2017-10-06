@@ -1,0 +1,31 @@
+Coin Sorting Machine
+---------------------------
+
+Write a java class called CoinStack.java, which implements CoinStackInterface
+
+Write your application named CoinStackApp.java that read coins (three data files are provided for testing purpose): 
+Construct 4 stacks (for penny, nickel, dime, and quarter stack), read coins from the data file then push to their corresponding stacks. 
+For example, if the value is 10, then you need to push that coin to dime stack.
+
+Use the static method print in the PrintCoinStacks class to print sorted coins. The print method takes 4 CoinStackInterface as its arguments. 
+The signature of this method is as follows: print(CoinStackInterface, CoinStackInterface , CoinStackInterface ,CoinStackInterface );
+
+
+
+   Here is a sample output:
+
+|    |    |     |    |    |    |      |
+|    |    |     |    |    |    |      |
+|    |    |     |    |    |    |      |
+|    |    |     |    |    |    |      |
+|    |    |     |    |    |    |      |
+|    |    |-----|    |    |    |      |    
+|    |    |-----|    |    |    |      |    
+|    |    |-----|    |    |    |      |    
+|    |    |-----|    |----|    |      |    
+|    |    |-----|    |----|    |      |    
+|    |    |-----|    |----|    |------|    
+|    |    |-----|    |----|    |------|    
+|    |    |-----|    |----|    |------|    
+|----|    |-----|    |----|    |------|    
+|----|    |-----|    |----|    |------|    
