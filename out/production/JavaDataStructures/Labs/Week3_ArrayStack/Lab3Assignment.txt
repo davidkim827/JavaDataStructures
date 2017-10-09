@@ -1,0 +1,39 @@
+Using array to implement a Stack ADT that keeps track of items in the bag and the total cost
+
+
+Requirements
+
+Create a class called Item with the following data members: itemName (String), quantity  (int, the number of the item) and retailPrice (float, unit price). As well as getter and setter methods.
+
+An interface ShoppingBagInterface with the following abstract methods are provided:
+    void push(Item item); 
+    void pop();// delete top item
+    Item top();// get the top item
+    boolean isFull(); 
+    boolean isEmpty();
+
+Create a class called ShoppingBag to implement ShoppingBagInterface. Objects of this class represent a single shopping bag. Attributes of such an object include  an array to store items (objects of the Item class) in the bag and a tax rate, and any other members that are required to implement the selected ADT, in this case, it is an array. Provide a constructor that accepts a tax rate as a float parameter and capacity of the bag as an int parameter.
+
+Create an application that reads data from a data file. The first line contains the tax rate and the capacity of the shopping bag. Each of the rest lines in the data file represents an item: item name, quantity, and retail price. For example, AAA Battery  5  0.99, represents 5 AAA Batteries that cost $0.99 each. Read all items in the data file if the shopping bag is not full. Then display a summary of the status of the shopping bag.
+
+
+
+Sample data file:
+0.05   5
+Colored Pencils 		3	0.59
+Notebook	5	0.99
+AAA Battery  5  0.99
+
+Output of the program
+
+The bag contains:
+------------------------------------------------
+Name of the Items 	Quantity	Subtotal
+Colored Pencils		     3		   $1.77
+Notebook		     5		   $4.95
+AAA Battery  		     5		   $4.95
+------------------------------------------------
+			 Total:	          $11.67
+		      Tax (5%):            $0.58
+------------------------------------------------
+                   Grand Total:           $12.25

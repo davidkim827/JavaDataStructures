@@ -1,0 +1,5 @@
+We developed the NumberQueue ADT in class. We assume each number in the queue represent a person in the line waiting for being served at your restaurant.
+Based on historical data, you found that on average, one customer arrives at your restaurant on every five minutes interval, 
+and it takes 3 minutes to serve each customer. Write a tester program to simulate the queue for 8 hours, then print the longest 
+queue size during the 8 hours operation. Did anyone leave your restaurant because the line if full? (assume the maximum capacity 
+of the line is 10 people) 

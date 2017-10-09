@@ -1,0 +1,7 @@
+This is similar to the first version of the simulation lab. However, you are required to track the average waiting time for all customers, 
+and the longest waiting time among them. To do so, you need to redesign the queue because you need more fields to store customer information,
+for example, you may need to track their arriving time and when they are served. All other information reamins the same as previous assignment:
+on average, one customer arrives at your restaurant on every five minutes interval, and it takes 3 minutes to serve each customer. 
+
+Write a tester program to simulate the queue for 8 hours, then print the longest queue size during the 8 hours operation, total customer arrives, 
+average waiting time, and longest waiting time. Did anyone leave your restaurant because the line if full? (assume the maximum capacity of the line is 10 people) 

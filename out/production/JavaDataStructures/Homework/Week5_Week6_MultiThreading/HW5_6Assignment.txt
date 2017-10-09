@@ -1,0 +1,18 @@
+Problem 1:
+Create a PrintChar class that implements Runnable. The constructor should accept a character and an integer as parameters. 
+The run method should print the character the number of times indicated by the integer. Create an application named CharApp.java 
+that instantiates two PrintChar objecs, one passed "A" and 200 and the other one passed "B" and 200. It them instantiates and starts two thread objects. 
+Experiment with the resulting system, using different numerical parameters for PrintChar objects. Create a report (a text file printChar.txt) about the 
+results of your experiments.
+
+Problem 2:
+Create an application named MaxRowSum.java that instantiates a 20x20 two-dimentional array of integers, populates it with random integers drawn from the 
+range 1 to 100, and then output the index of the row with the highest sum along all the rows. To support your solution, create a class named RowSumThread.java 
+from which you can instantiate Runnable objects, each of which will sum one row of the two-dimensional array and then place the sum of that row into the 
+appropriate slot of a one-dimensional, 20-element array. 
+
+To Summarize, your application will:
+
+1. Generate the two-dimensional array of random integers
+2. Start 20 concurrent threads, each of which places the sum of one row of the two-dimensional array into the corresponding slot of a one-dimensional array.
+3. Onput the index of the row with the maximum value.
