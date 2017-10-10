@@ -168,7 +168,7 @@ public class QueueGUI extends Application implements EventHandler<ActionEvent> {
 
         startButton.setOnAction(this);
         stopButton.setOnAction(this);
-        this.controller = new Controller(resultsTextArea);
+        this.controller = new Controller(resultsTextArea, startButton, stopButton);
         controller.start();
     }
 
@@ -176,9 +176,13 @@ public class QueueGUI extends Application implements EventHandler<ActionEvent> {
     public void handle(ActionEvent event) {
         if (event.getSource() == startButton) {
             controller.setStatus(1);
+            startButton.setDisable(true);
+            stopButton.setDisable(false);
         }
         if (event.getSource() == stopButton) {
             controller.setStatus(2);
+            stopButton.setDisable(true);
+            startButton.setDisable(false);
         }
     }
 }

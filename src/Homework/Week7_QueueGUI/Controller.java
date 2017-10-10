@@ -7,16 +7,22 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Controller implements Runnable {
+
     private int status;
     private Thread thread;
     private TextArea resultsTextArea;
+    private Button startButton;
+    private Button stopButton;
     private int average;
 
-    public Controller(TextArea resultsTextArea) {
+    public Controller(TextArea resultsTextArea, Button startButton, Button stopButton) {
         thread = new Thread(this);
         setResultsTextArea(resultsTextArea);
+        setStartButton(startButton);
+        setStopButton(stopButton);
         status = 0;
     }
+
 
     public void setStatus(int status) {
         this.status = status;
@@ -34,41 +40,51 @@ public class Controller implements Runnable {
         this.resultsTextArea = resultsTextArea;
     }
 
+    public void setStartButton(Button startButton){
+        this.startButton = startButton;
+    }
+
+    public void setStopButton(Button stopButton){
+        this.stopButton = stopButton;
+    }
+
     @Override
     public void run() {
         int count = 0;
         while (true) {
             switch (getStatus()) {
                 case 0: {
-                    resultsTextArea.setText("Results");
+                    startButton.setDisable(false);
+                    stopButton.setDisable(true);
                     break;
                 }
                 case 1: {
+
                     if (count == 480) {
-                        try {
-                            Thread.sleep(2000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
                         results(count);
+                        setStatus(0);
+                        run();
                     }
                     count++;
                     break;
                 }
                 case 2: {
                     results(count);
-                    System.out.print(count);
                     setStatus(0);
-                    count = 0;
+                    run();
                     break;
                 }
+            }
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
 
     public void results(int counter) {
         Random r = new Random();
-
 
         NumberQueue nq = new NumberQueue(10);
 
@@ -125,7 +141,8 @@ public class Controller implements Runnable {
             sum = sum + copyArr[i];
         }
         float average = (float) sum / copyArr.length;
-        DecimalFormat df = new DecimalFormat("#.###");
+        DecimalFormat df = new DecimalFormat("#0.000");
+        String averageWaitingTime = df.format(average);
 
         System.out.printf("Average waiting time: %1.3f minutes\n", average);
         System.out.println("Longest waiting time: " + waitingTime + " minutes");
@@ -133,13 +150,15 @@ public class Controller implements Runnable {
         System.out.println("Customers not served after closing: " + customersNotServed);
         System.out.println("Customers left: " + customerLeft);
 
-        resultsTextArea.setText("Average waiting time: " + average + " minutes\nLongest waiting time: " +
+        resultsTextArea.setText("Average waiting time: " + averageWaitingTime + " minutes\nLongest waiting time: " +
                 waitingTime + "\nTotal Customers: " + (customersServed - customersNotServed) + "\nCustomers left: "
                 + customerLeft);
 
+
     }
 
-    public void customerQueue() {
+    public void customerQueue(int customer) {
+        Random r = new Random();
 
 
     }
