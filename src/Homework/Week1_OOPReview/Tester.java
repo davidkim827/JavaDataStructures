@@ -15,10 +15,11 @@ public class Tester {
 
         Employee[] employees = new Employee[5];
 
-        Scanner input = new Scanner(new File("employee.txt"));
+        Scanner input = new Scanner(new File("employee.txt")); //reads in employee.txt
 
         int i = 0;
-        while (input.hasNext()) {
+        while (input.hasNext()) { //while loop to check each line for what type of employee, and the data proceeding
+                                  // after the name for the employee data type regarding wages, earnings, hours, etc.
             firstName = input.next();
             double wage;
             int hours;

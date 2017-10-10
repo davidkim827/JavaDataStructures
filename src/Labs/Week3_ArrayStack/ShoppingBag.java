@@ -51,7 +51,7 @@ public class ShoppingBag implements ShoppingBagInterface {
         return index == -1;
     }
 
-    public float totalRetailCost() {
+    public float totalRetailCost() { //returns the total retail cost
         float sum = 0;
         for (int i = 0 ; i < index; i++) {
             sum = sum + (this.bag[i].getQuantity() * this.bag[i].getRetailPrice());
@@ -59,7 +59,7 @@ public class ShoppingBag implements ShoppingBagInterface {
 
         return sum;
     }
-    public float getTaxRate(float totalRetail){
+    public float getTaxRate(float totalRetail){ // returns the tax rate based upon the total retail cost
         return (totalRetail * this.taxRate);
     }
 

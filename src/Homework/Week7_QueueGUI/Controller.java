@@ -10,12 +10,12 @@ public class Controller implements Runnable {
     private int status;
     private Thread thread;
     private TextArea resultsTextArea;
+    private int average;
 
     public Controller(TextArea resultsTextArea) {
         thread = new Thread(this);
         setResultsTextArea(resultsTextArea);
         status = 0;
-
     }
 
     public void setStatus(int status) {
@@ -36,24 +36,37 @@ public class Controller implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 2; i++) {
+        int count = 0;
+        while (true) {
             switch (getStatus()) {
                 case 0: {
-
+                    resultsTextArea.setText("Results");
                     break;
                 }
                 case 1: {
-                    results();
+                    if (count == 480) {
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        results(count);
+                    }
+                    count++;
                     break;
                 }
-
+                case 2: {
+                    results(count);
+                    System.out.print(count);
+                    setStatus(0);
+                    count = 0;
+                    break;
+                }
             }
         }
     }
 
-
-
-    public void results() {
+    public void results(int counter) {
         Random r = new Random();
 
 
@@ -72,7 +85,7 @@ public class Controller implements Runnable {
         int countTimeLeft = 0;
         int customersNotServed = 0;
 
-        for (int t = 1; t <= 480; t++) {
+        for (int t = 1; t <= counter; t++) {
             int avgMinutes = 1 + r.nextInt(5);
             if (avgMinutes == 5 && nq.size() < 10) {
                 nq.enqueue(r.nextInt(10));
@@ -112,8 +125,7 @@ public class Controller implements Runnable {
             sum = sum + copyArr[i];
         }
         float average = (float) sum / copyArr.length;
-        DecimalFormat decimalFormat = new DecimalFormat("#.###");
-        String averageString = Float.valueOf(decimalFormat.format(average)).toString();
+        DecimalFormat df = new DecimalFormat("#.###");
 
         System.out.printf("Average waiting time: %1.3f minutes\n", average);
         System.out.println("Longest waiting time: " + waitingTime + " minutes");
@@ -121,9 +133,14 @@ public class Controller implements Runnable {
         System.out.println("Customers not served after closing: " + customersNotServed);
         System.out.println("Customers left: " + customerLeft);
 
-        resultsTextArea.setText("Average waiting time: " + averageString + " minutes\nLongest waiting time: " +
+        resultsTextArea.setText("Average waiting time: " + average + " minutes\nLongest waiting time: " +
                 waitingTime + "\nTotal Customers: " + (customersServed - customersNotServed) + "\nCustomers left: "
                 + customerLeft);
+
+    }
+
+    public void customerQueue() {
+
 
     }
 

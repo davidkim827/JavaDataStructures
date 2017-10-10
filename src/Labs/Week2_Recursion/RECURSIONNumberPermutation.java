@@ -16,7 +16,7 @@ public class RECURSIONNumberPermutation  {
         permutation("", len);
     }
 
-    public static void permutation(String str, int len) {
+    public static void permutation(String str, int len) { //recursive method to output all possible combinations of all single odd digits based upon number of inputs per line
 
         if (len == 0)
             System.exit(1);

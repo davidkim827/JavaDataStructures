@@ -13,7 +13,7 @@ public class REVIEWArray2DPrint {
         int[][] arr = new int[nByN][nByN];
         print(arr);
     }
-    public static void print(int[][] arr){
+    public static void print(int[][] arr){ // Print method for the array
         Random r1 = new Random();
 
         for (int i = 0; i < arr.length; i++){

@@ -1,6 +1,6 @@
 package Labs.Week5_Queue;
 
-public class NumberQueue{
+public class NumberQueue{ //class given to implement
 
     private int[] data;
     private int front, rear, numberOfItems, capacity;

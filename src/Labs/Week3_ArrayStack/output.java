@@ -9,14 +9,14 @@ import java.util.Scanner;
  */
 public class output {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner output = new Scanner(new File("data.txt"));
+        Scanner output = new Scanner(new File("data.txt")); //reads through the data.txt file for the items that are placed in shopping bag, number of items, and price per item
 
 
-        String[] arr = output.nextLine().replaceFirst("\\s+", " ").split(" ");
+        String[] arr = output.nextLine().replaceFirst("\\s+", " ").split(" "); //places first two data points (symbolizing tax rate and capacity of shopping bag) into an array
 
-        ShoppingBag shoppingBag = new ShoppingBag(Float.parseFloat(arr[0]), Integer.parseInt(arr[1]));
+        ShoppingBag shoppingBag = new ShoppingBag(Float.parseFloat(arr[0]), Integer.parseInt(arr[1])); //instantiates the shoppingbag
 
-        while (output.hasNextLine()) {
+        while (output.hasNextLine()) { //reads through rest of data.txt file for the items, quantity, and price per item
             String itemName;
             int quantity;
             float price;

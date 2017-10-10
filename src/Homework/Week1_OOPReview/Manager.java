@@ -8,7 +8,7 @@ public class Manager extends Employee {
     private double _weeklySalary;
 
 
-    public Manager(String fName, String lName, double weeklySalary) {
+    public Manager(String fName, String lName, double weeklySalary) { //manager constructor
 
         super(fName, lName);
         if (weeklySalary >= 800 && weeklySalary <= 2000)
@@ -17,6 +17,7 @@ public class Manager extends Employee {
             this._weeklySalary = 0;
     }
 
+    //setter and getter methods for weekly salary found from read data text file
     public void set_weeklySalary(double weeklySalary) {
 
         this._weeklySalary = weeklySalary;
@@ -27,6 +28,7 @@ public class Manager extends Employee {
         return _weeklySalary;
     }
 
+    //prints out the name of the manager and earnings
     public String toString() {
         super.toString();
 
@@ -34,7 +36,7 @@ public class Manager extends Employee {
     }
 
     @Override
-    public double earnings() {
+    public double earnings() {//earnings method found from data text
 
         return _weeklySalary;
     }

@@ -3,7 +3,7 @@ package Labs.Week3_ArrayStack;
 /**
  * Created by dk on 9/7/2017.
  */
-public class Item {
+public class Item { //describes the items read from the data text file and passes along the information to the Shopping bag class
     private String itemName;
     private int quantity;
     private float retailPrice;
@@ -37,7 +37,7 @@ public class Item {
     }
 
     @Override
-    public String toString() {;
+    public String toString() { //returns
         return String.format("\n%-17s %16d %16s", this.getItemName(), this.getQuantity(), (this.getQuantity() * this.getRetailPrice()));
     }
 

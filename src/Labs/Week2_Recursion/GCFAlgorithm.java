@@ -1,6 +1,6 @@
 package Labs.Week2_Recursion;
 
-public class GCFAlgorithm {
+public class GCFAlgorithm { //given class to implement
 
     public static int gcf1(int a, int b) {
         if (Math.abs(a) == Math.abs(b))

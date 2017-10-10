@@ -22,7 +22,7 @@ public class RECURSIONMultiply {
 
     }
 
-    public static int multiply(int a, int b){
+    public static int multiply(int a, int b){ //recursive method to multiply based only on addition
 
         if (b == 0)
             return 0;

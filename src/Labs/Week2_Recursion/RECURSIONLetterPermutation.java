@@ -17,7 +17,7 @@ public class RECURSIONLetterPermutation {
         Recursion("", positiveInteger);
     }
 
-    public static void Recursion(String str, int len) {
+    public static void Recursion(String str, int len) { //recursion method to output all possible combinations of Ls or Rs depending on how many inputs possible per line
 
 
         if (len == 1) {

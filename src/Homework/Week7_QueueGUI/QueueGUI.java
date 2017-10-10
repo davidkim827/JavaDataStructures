@@ -178,8 +178,7 @@ public class QueueGUI extends Application implements EventHandler<ActionEvent> {
             controller.setStatus(1);
         }
         if (event.getSource() == stopButton) {
-            controller.setStatus(0);
-            startButton.setText("Start");
+            controller.setStatus(2);
         }
     }
 }

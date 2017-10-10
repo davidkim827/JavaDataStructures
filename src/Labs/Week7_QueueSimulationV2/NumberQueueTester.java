@@ -20,23 +20,23 @@ public class NumberQueueTester {
 
         int[] timeArray = new int[150];
 
-        int[] timeArrivedArray = new int[150];
-        int[] timeLeftArray = new int[150];
+        int[] timeArrivedArray = new int[150]; //counts at what time the customers arrive
+        int[] timeLeftArray = new int[150]; //counts at what time the customers leave
         int countTimeArrived = 0;
         int countTimeLeft = 0;
         int customersNotServed = 0;
 
-        for (int t = 1; t <= 480; t++) {
-            int avgMinutes = 1 + r.nextInt(5);
-            if (avgMinutes == 5 && nq.size() < 10) {
+        for (int t = 1; t <= 480; t++) {//models an 8 hour restaurant time
+            int avgMinutes = 1 + r.nextInt(5); //generates a random number between 1 - 5 to model when customers leave and come
+            if (avgMinutes == 5 && nq.size() < 10) { //customers arrive on average of 5 min.
                 nq.enqueue(r.nextInt(10));
-                System.out.println((timeArrivedArray[countTimeArrived] = t) + " This is time Arrived");
+                System.out.println((timeArrivedArray[countTimeArrived] = t) + " This is time Arrived"); //prints out array for what time they arrived
                 countTimeArrived++;
                 customersServed++;
                 if (maxSize < nq.size())
                     maxSize = nq.size();
             }
-            if (nq.size() == 10) {
+            if (nq.size() == 10) { //restaurant is full when the queue is size 10 and customers leave if the queue is full
                 restaurantFull++;
                 if (avgMinutes == 5) {
                     customerLeft++;
@@ -44,16 +44,18 @@ public class NumberQueueTester {
             }
             if (!nq.isEmpty() && t % 3 == 0) {
                 nq.dequeue();
-                System.out.println((timeLeftArray[countTimeLeft] = t) + " This is time Left");
+                System.out.println((timeLeftArray[countTimeLeft] = t) + " This is time Left"); //prints out array for what time they left
                 countTimeLeft++;
             }
         }
 
         System.out.println("\n\n");
 
+
+        // counts the waiting time for each customer that walked in
         int waitingTime = 0;
         for (int i = 0; i < timeArrivedArray.length; i++) {
-            timeArray[i] = timeLeftArray[i] - timeArrivedArray[i];
+            timeArray[i] = timeLeftArray[i] - timeArrivedArray[i]; //subtracts time arrived from time left array to create the waiting time array
             System.out.print(timeArray[i] + " ");
             if (timeArray[i] > waitingTime) {
                 waitingTime = timeArray[i];
@@ -64,6 +66,7 @@ public class NumberQueueTester {
         }
         System.out.println("\n\n\n");
 
+        //copied the waiting time array to account for any customers not served because customer entered after restaurant closed and for any unfilled spots in the array
         int sum = 0;
         int[] copyArr = Arrays.copyOf(timeArray, (customersServed - customersNotServed));
         for(int i = 0; i< copyArr.length; i++) {
@@ -74,6 +77,7 @@ public class NumberQueueTester {
 
         System.out.println("\n\n\n");
 
+        //prints out all gathered information
         System.out.println("Restaurant served " + (customersServed - customersNotServed) + ".");
         System.out.println("Customers NOT served after closing: " + customersNotServed);
         System.out.println("Customers Left because full: " + customerLeft);
