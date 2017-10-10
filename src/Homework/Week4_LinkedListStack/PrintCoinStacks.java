@@ -3,10 +3,11 @@ package Homework.Week4_LinkedListStack;
 /**
  * Created by dk on 9/18/2017.
  */
-public class PrintCoinStacks {
+public class PrintCoinStacks { //print class to accept interface arguments
     public static void print(CoinStackInterface penny, CoinStackInterface nickel, CoinStackInterface dime,
                              CoinStackInterface quarter) {
 
+        //string output that bases the width of the stacks upon the size of the actual coins (pennies are larger than dimes, but smaller than quarters.. etc.)
         String pennyLine = "|-----|";
         String nickelLine = "|------|";
         String dimeLine = "|----|";
@@ -17,7 +18,7 @@ public class PrintCoinStacks {
         int dimeCount = dime.size();
         int quarterCount = quarter.size();
 
-        for (int i = 50; i > 0; i--) {
+        for (int i = 50; i > 0; i--) { //creates a visual for how many items in each stack with 50 coins being able to fit in pennies and dimes, and 40 in nickels and quarters
             if (i == pennyCount) {
                 System.out.printf("%10s", pennyLine);
                 pennyCount--;

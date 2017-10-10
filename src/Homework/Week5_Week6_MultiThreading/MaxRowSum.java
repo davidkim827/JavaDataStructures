@@ -10,6 +10,7 @@ public class MaxRowSum {
         Random r = new Random();
         int[][] randomArray = new int[20][20];
 
+        //fills in the 20x20 array with random numbers
         for (int i = 0; i < randomArray.length; i++) {
             for (int j = 0; j < randomArray.length; j++) {
                 randomArray[i][j] = 1 + r.nextInt(100);
@@ -20,6 +21,7 @@ public class MaxRowSum {
 
         System.out.println();
 
+        //instantiates 20 different threads to sum up all the values per row
         RowSumThread rst0 = new RowSumThread(randomArray, 0);
         RowSumThread rst1 = new RowSumThread(randomArray, 1);
         RowSumThread rst2 = new RowSumThread(randomArray, 2);
@@ -62,6 +64,7 @@ public class MaxRowSum {
         rst18.start();
         rst19.start();
 
+        //instantiates a new array to fill up with the row sums
         int[] arr = new int[20];
 
         arr[0] = rst0.rowSum();
@@ -90,6 +93,7 @@ public class MaxRowSum {
         int indexOfHighestSum = 0;
         int highestSum = 0;
 
+        //loops through the entire row summed array to see at which index and what number is the highest sum and prints out those two data points
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
             if (arr[i] > highestSum) {

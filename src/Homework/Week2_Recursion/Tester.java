@@ -20,7 +20,7 @@ public class Tester {
         arr = arrReader(fileName);
         arrReaderOutput(arr);
 
-        System.out.print("Enter ROW , COL: ");
+        System.out.print("Enter ROW , COL: "); //user determines which character and position from which the converter is started
         int row = keyBoard.nextInt();
         int col = keyBoard.nextInt();
 
@@ -30,6 +30,7 @@ public class Tester {
 
     }
 
+    //converts the text file into a nxn array
     public static char[][] arrReader(String fileName) throws FileNotFoundException {
         File file = new File(fileName);
         Scanner output = new Scanner(file);
@@ -48,10 +49,14 @@ public class Tester {
         return arr;
     }
 
+    //prints out the array
     public static void arrReaderOutput(char[][] arr){
         for (int i = 0; i < arr.length; i++)
             System.out.println(arr[i]);
     }
+
+    //replaces the character chosen with a star and spreads around the file using recursion until the last similar
+    // character touching is reached
 
     public static void arrFiller(char[][] arr, int row, int col, char original, char star){
 

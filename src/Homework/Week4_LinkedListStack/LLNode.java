@@ -6,7 +6,7 @@ public class LLNode {
     private LLNode next;
     private int coin;
 
-    public LLNode(int coin, LLNode next){
+    public LLNode(int coin, LLNode next){ //LLNode constructor to accept what coin and pointing to next element in stack
         this.next = next;
         setCoin(coin);
     }

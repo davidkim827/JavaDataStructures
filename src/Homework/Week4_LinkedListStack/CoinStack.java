@@ -3,7 +3,7 @@ package Homework.Week4_LinkedListStack;
 /**
  * Created by dk on 9/18/2017.
  */
-public class CoinStack implements CoinStackInterface {
+public class CoinStack implements CoinStackInterface { //Linked List Implementation of Stack ADT
     private LLNode top;
     private int count;
 
@@ -11,11 +11,11 @@ public class CoinStack implements CoinStackInterface {
         top = null;
     }
 
-    public int top(){
+    public int top(){ //returns top element
         return top.getCoin();
     }
 
-    public void push(int coin){
+    public void push(int coin){ //pushes/points to a new node for stack
         LLNode n = new LLNode(coin, null);
         n.setNext(top);
         top = n;
@@ -23,7 +23,7 @@ public class CoinStack implements CoinStackInterface {
         count++;
     }
 
-    public void pop() {
+    public void pop() { //removes top element from stack
         if (!isEmpty()) {
             LLNode nn = top;
             top = nn.getNext();

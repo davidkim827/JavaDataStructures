@@ -8,7 +8,7 @@ public class RowSumThread implements Runnable {
     private int[][] randomArray;
     private int index;
 
-    public RowSumThread(int[][] randomArray, int index) {
+    public RowSumThread(int[][] randomArray, int index) { //constructor accepting the 20x20 array filled with random integers and index argument to sum up in rowsum() method.
         this.thread = new Thread(this);
         setRandomArray(randomArray);
         setIndex(index);
@@ -39,7 +39,7 @@ public class RowSumThread implements Runnable {
         rowSum();
     }
 
-    public int rowSum() {
+    public int rowSum() { //method that sums up the rows
         int rowSum = 0;
 
         for (int i = getIndex(); i < getIndex() + 1; i++)

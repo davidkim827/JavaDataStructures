@@ -15,13 +15,15 @@ public class CoinStackApp {
         System.out.print("Name of file to analyze? ");
         file = keyBoard.next();
 
-        Scanner read = new Scanner(new File(file));
+        Scanner read = new Scanner(new File(file)); //reads in file
 
+        //instantiates a penny, nickel, dime, and quarter stacks
         CoinStack penny = new CoinStack();
         CoinStack nickel = new CoinStack();
         CoinStack dime = new CoinStack();
         CoinStack quarter = new CoinStack();
 
+        //reads through data text file consisting of the coin values and places them to their appropriate stacks
         while (read.hasNext()) {
             int nextCoin = Integer.parseInt(read.next());
             if (nextCoin == 1)
@@ -34,6 +36,7 @@ public class CoinStackApp {
                 quarter.push(nextCoin);
         }
 
+        //instantiates the print class and calls print method for each of the stacks
         PrintCoinStacks print = new PrintCoinStacks();
         print.print(penny, nickel, dime, quarter);
 

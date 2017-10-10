@@ -3,7 +3,7 @@ package Homework.Week5_Week6_MultiThreading;
 /**
  * Created by dk on 9/29/2017.
  */
-public class PrintChar implements Runnable {
+public class PrintChar implements Runnable { //implements runnable interface for multithreading
 
     private Thread thread;
     private char ch;
@@ -36,7 +36,7 @@ public class PrintChar implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run() { //prints out the character
 
         for(int i = 0; i < getInteger(); i++)
             System.out.println(getCh() + " ");

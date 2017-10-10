@@ -11,10 +11,10 @@ public class NumberStackTester {
 
         NumberStack ns = new NumberStack();
 
-        for (int i = 0; i < 500; i++)
+        for (int i = 0; i < 500; i++) //pushes a random number for 500 cycles onto a stack
             ns.push(r.nextInt(5000));
 
-        ns.print();
+        ns.print(); //print method called
     }
 }
 
