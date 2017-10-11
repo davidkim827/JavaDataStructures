@@ -46,4 +46,8 @@ public class NumberQueue {
         else
             return -1000;
     }
+    public void print(){
+        System.out.println(front + " " + rear);
+    }
+
 }
