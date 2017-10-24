@@ -10,8 +10,9 @@ The following are the concepts I have learned over the weeks:
 
 	Week 1: "Review"
 	Week 2: Recursion
-	Week 3: Stacks (array implementation)
-	Week 4: Stacks (linked list implementation)
-	Week 5: Queues
+	Week 3: Stack (Array Implementation) ADT
+	Week 4: Stack (Linked List Implementation) ADT
+	Week 5: Queue ADT
 	Week 6: Multi-Threading
 	Week 7: Implementation of Queues & Multi-Threading
+	Week 8: List ADT (Linked List Implementation)
