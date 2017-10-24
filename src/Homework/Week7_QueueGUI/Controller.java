@@ -340,7 +340,7 @@ public class Controller implements Runnable {
     public void customerDequeue() {
 
         try {
-            Thread.sleep(100);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
