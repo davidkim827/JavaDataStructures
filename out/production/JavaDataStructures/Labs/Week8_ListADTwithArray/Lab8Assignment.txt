@@ -1,0 +1,8 @@
+Overload the remove method the MyList.java as specified below:
+
+public void remove(String data)
+
+1. Create a java program named MyList.java then copy and paste the content of MyList.txt
+2. Overolad the remove method.
+3. Do you see any problem of the implementation of some methods? If so, please revise the code fix the problems.
+4. Design a driver program named MyListDriver.java to test your list ADT

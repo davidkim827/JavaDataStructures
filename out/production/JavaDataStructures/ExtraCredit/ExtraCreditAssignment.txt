@@ -1,0 +1,40 @@
+Design a programming named CharDistribution.java, within this program, implements methods as specified below:
+
+public int[] charCounting(String str) - this method counts number of times each of alphabetic characters appears in the string. The first element of the int array represents the frequency of A, the 2nd is for B, and so on.
+
+public int[] charCounting(File file) - which counts how many times each of the alphabetic characters appears in the data file.
+
+public void print(int[] c) -print the int array in a histogram format.
+
+Note: The overloaded charCounting methods do not differentiate the difference between lower and upper cases. 
+
+
+Then print the result as a histogram as specified as follows:
+
+
+        *                                           
+        *                                           
+        *                                           
+        *                                           
+        *                   *                       
+        *                   *                       
+*       *                   *                       
+*       *                   *     * * *             
+*       *                 * *     * * *             
+*       *       *         * *     * * *             
+*       *       *         * *     * * *             
+*       *       *     *   * *     * * *             
+*       *       *     *   * *     * * *             
+*       *     * *     *   * * *   * * *             
+*   *   *     * *     *   * * *   * * *             
+*   * * *     * *     * * * * *   * * *             
+*   * * *   * * *     * * * * *   * * * *           
+*   * * *   * * *     * * * * *   * * * *           
+*   * * * * * * *     * * * * *   * * * * * *       
+* * * * * * * * *     * * * * *   * * * * * *   *   
+---------------------------------------------------- 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+How to run testing cases:
+Click on the CharDistributionJUnit.class file, then click on the Run JUnit button
+To examine the histogram output, click on the CharDistribtionT.class to select the file, then type *data1.txt in the Cmd argument list then click on the Run button
