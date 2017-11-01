@@ -26,21 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeTester.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BXT.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BXT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="125" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="427">
+              <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="e#456#457#0" expanded="true" />
                 <element signature="e#490#491#0" expanded="true" />
@@ -186,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/KeyStroke.java" />
         <option value="$PROJECT_DIR$/src/ClassExample/BinaryTree/LLNode.java" />
         <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeTester.java" />
         <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/MyTree.java" />
         <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/Stack2.java" />
         <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/Stack1.java" />
@@ -195,9 +184,10 @@
         <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/StackOperator.java" />
         <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/Conversion.java" />
         <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXTDriver.java" />
-        <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXT.java" />
         <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/StackNode.java" />
         <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeTester.java" />
+        <option value="$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXT.java" />
       </list>
     </option>
   </component>
@@ -893,16 +883,15 @@
       <workItem from="1508809712056" duration="408000" />
       <workItem from="1508810233000" duration="1296000" />
       <workItem from="1509020018782" duration="39004000" />
-      <workItem from="1509471558561" duration="24281000" />
+      <workItem from="1509471558561" duration="25099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320216000" />
+    <option name="totallyTimeSpent" value="321034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -914,7 +903,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38372093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38372093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1327,10 +1316,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeyStroke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXTDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="125" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="427">
+          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
             <element signature="e#456#457#0" expanded="true" />
             <element signature="e#490#491#0" expanded="true" />
@@ -1347,30 +1360,6 @@
             <element signature="e#4044#4045#0" expanded="true" />
             <element signature="e#4095#4096#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeyStroke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Homework/Week9_BinaryExpressionTree/BXTDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Week9_TreeADT/TreeTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>

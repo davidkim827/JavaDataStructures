@@ -20,9 +20,6 @@ public class TreeTester {
         tree.add(38);
 
 
-
-
-
         tree.printInorder();
         System.out.println();
         tree.printReverse();

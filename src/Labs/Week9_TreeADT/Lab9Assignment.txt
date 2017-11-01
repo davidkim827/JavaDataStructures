@@ -1,0 +1,7 @@
+For this lab assignment, you are required to implement two methods:
+remove and printReverse method as specified in the file.
+
+1. Create a java file named MyTree.java
+2. Copy the entire code in the MyTree.txt and paste to your MyTree.java
+3. Implement remove and printReverse method
+4. Implement display method to display the tree structure
