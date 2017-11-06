@@ -1,0 +1,14 @@
+	
+Write a GUI based program to help users to analyze a text string. The user will type a text in a text filed. Your program will help the user to determine:
+1. The length of the text
+2. The number of vowels in the text
+3. The number of uppercase letters in the text
+4. The mode of letters in the text(the most occurrences of the character)
+5. Count the number of Latin alphabetic letters
+
+For this assignment, you should design and code a separate (non-GUI) class encapsulating a text and its analysis, then instantiate an object of that class inside your GUI application and call the various class as needed. To do so, you need to create a class named TextAnalyzer.java that exdends TextAnalyzerAnstract class. Here is the summary of tasks for this assignment:
+
+1. Create a class named TextAnalyzer.java that extends TextAnalyzerAbstract.
+2. Create a GUI application named GUITextAnalyser.java
+
+A demo program is provided. Please run the GUITextAnalyzerDemo.class to see how it looks like and operates.

@@ -23,53 +23,17 @@ public class BXTDriver
         {
             System.out.println("Postfix Exp: "  + postfix);
             BXT tree = new BXT();
-            tree.buildTree( postfix );
+            tree.buildTree( postfix ); System.out.println();tree.print();
             System.out.println("BXT: ");
-            tree.display();
+            System.out.print(tree.display());
             System.out.print("Infix order:  ");
-            tree.inorderTraverse();
+            System.out.print(tree.infix());
             System.out.print("\nPrefix order:  ");
-            tree.preorderTraverse();
+            System.out.print(tree.prefix());
+            System.out.print("\nPostFix order:  ");
+            System.out.print(tree.postfix());
             System.out.print("\nEvaluates to " + tree.evaluateTree());
             System.out.println( "\n------------------------");
         }
     }
 }
-
-/***************************************
- Postfix Exp: 14 -5 /
- BXT:
- -5
- /
- 14
- Infix order:  14 / -5
- Prefix order:  / 14 -5
- Evaluates to -2.8
- ------------------------
- Postfix Exp: 20 3 -4 + *
- BXT:
- -4
- +
- 3
- *
- 20
- Infix order:  20 * 3 + -4
- Prefix order:  * 20 + 3 -4
- Evaluates to -20.0
- ------------------------
- Postfix Exp: 2 3 + 5 / 4 5 - *
- BXT:
- 5
- -
- 4
- *
- 5
- /
- 3
- +
- 2
- Infix order:  2 + 3 / 5 * 4 - 5
- Prefix order:  * / + 2 3 5 - 4 5
- Evaluates to -1.0
- ------------------------
- */
