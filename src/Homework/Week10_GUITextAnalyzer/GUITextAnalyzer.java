@@ -12,13 +12,13 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-
 public class GUITextAnalyzer extends Application implements EventHandler<ActionEvent> {
 
     private Button lengthButton; //button to call the length method in TextAnalyzer class if clicked
     private Button vowelsButton; //button to call the numberOfVowels method in TextAnalyzer class if clicked
     private Button upperCaseButton; //button to call the numberOfUppercase method in TextAnalyzer class if clicked
-    private Button latinAlphabetButton; //button to call the numberOfLatinAlphabetic method in TextAnalyzer class if clicked
+    private Button latinAlphabetButton; //button to call the numberOfLatinAlphabetic method in TextAnalyzer class
+    private Button modeButton; //button to call the mode method in TextAnalyzer class if clicked
 
     private TextArea userInputArea; //textarea for user input
     private Label analysisResultLabel; //label to be updated with the results from the calculations
@@ -53,9 +53,14 @@ public class GUITextAnalyzer extends Application implements EventHandler<ActionE
         latinAlphabetButton.setLayoutX(280.0);
         latinAlphabetButton.setLayoutY(90.0);
 
+        modeButton = new Button("Mode");
+        modeButton.setPrefSize(70.0, 25.0);
+        modeButton.setLayoutX(400.0);
+        modeButton.setLayoutY(90.0);
+
         userInputArea = new TextArea();
         userInputArea.setPromptText("Type Text Here");
-        userInputArea.setPrefSize(275.0, 5.0);
+        userInputArea.setPrefSize(355.0, 5.0);
         userInputArea.setLayoutX(60);
         userInputArea.setLayoutY(10.0);
 
@@ -64,9 +69,10 @@ public class GUITextAnalyzer extends Application implements EventHandler<ActionE
         analysisResultLabel.setLayoutY(52.0);
 
         AnchorPane layout = new AnchorPane();
-        layout.getChildren().addAll(lengthButton, vowelsButton, upperCaseButton, latinAlphabetButton, userInputArea, analysisResultLabel);
+        layout.getChildren().addAll(lengthButton, vowelsButton, upperCaseButton, latinAlphabetButton,
+                modeButton, userInputArea, analysisResultLabel);
 
-        Scene scene = new Scene(layout, 400, 125);
+        Scene scene = new Scene(layout, 480, 125);
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -74,6 +80,7 @@ public class GUITextAnalyzer extends Application implements EventHandler<ActionE
         vowelsButton.setOnAction(this);
         upperCaseButton.setOnAction(this);
         latinAlphabetButton.setOnAction(this);
+        modeButton.setOnAction(this);
     }
 
     //event handler method
@@ -90,14 +97,22 @@ public class GUITextAnalyzer extends Application implements EventHandler<ActionE
             analysisResultLabel.setText("There are " + logic.numberOfVowels() + " vowels in the text.");
         }
 
-        //if the length button is clicked, it returns the results of the numberOfUppercase method from TextAnalyzer class
+        //if the length button is clicked, it returns the results of the numberOfUppercase method from
+        // TextAnalyzer class
         if(event.getSource() == upperCaseButton){
             analysisResultLabel.setText("There are " + logic.numberOfUppercase() + " uppercase letters in the text.");
         }
 
-        //if the length button is clicked, it returns the results of the numberOfLatinAlphabetic method from TextAnalyzer class
+        //if the length button is clicked, it returns the results of the numberOfLatinAlphabetic method from
+        // TextAnalyzer class
         if(event.getSource() == latinAlphabetButton){
             analysisResultLabel.setText("There are " + logic.numberOfLatinAlphabetic() + " Latin Alphabetic letters.");
+        }
+
+        //if the mode button is clicked, it returns the results of the mode method from TextAnalyzer class and converts
+        // it into an uppercase letter for the user to easily distinguish
+        if(event.getSource() == modeButton){
+            analysisResultLabel.setText("The mode of the letters in the strings is/are: " + logic.mode().toUpperCase());
         }
     }
 }

@@ -24,4 +24,5 @@ public abstract class TextAnalyzerAbstract{
     public abstract int numberOfVowels(); //return the number of vowels in the text
     public abstract int numberOfUppercase(); // return the number of uppercase letters in the text
     public abstract int numberOfLatinAlphabetic();// return the number of latin alphabetic characters in the text
+    public abstract String mode(); //returns the mode of the characters in the text
 }
