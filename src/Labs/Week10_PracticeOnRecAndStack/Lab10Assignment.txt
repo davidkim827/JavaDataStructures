@@ -1,0 +1,32 @@
+Problem 1:
+Postfix Expressions
+A standard expression like 3+4 uses infix notation. The equivalent postfix form is 34+.   ("Post" means "after," meaning that the operator appears after its operands.)  Because of the order of operations, infix notation sometimes requires parentheses, but postfix expressions never need parentheses. 
+
+For simplicity we will initially limit our operands to single digit positive integers and our operations to addition, subtraction, multiplication, and division. We will not use blank spaces.  Use a java.util.Stack whenever you need a stack. For this assignment, write a class named Postfix.java, which implements the following methods:
+
+public static int eval(String str)
+private static int eval(int a, int b, char ch)
+public static boolean isOperator(char ch)
+
+Use as test data the expressions below.  Output both the expression and its numerical evaluation. 
+
+Postfix  -->  Evaluate
+345*+           23
+34*5+           17
+45+53*-         -6
+34+56+*         77
+345+*2-5/        5
+812*+93/-        7
+
+Problem 2:
+Maze Solver
+Write a program named MazeSolver.java to solve a maze. A maze can be represented with a string or a 2D array. For this assignment, we use 2D array. 
+
+Original maze       Solved Maze
+-------------       -----------
+WWW                  WWW 
+S.W                  S*W
+W.E                  W*E
+
+where W represents wall, S is for starting point, . for the available path, and E is Exit. The * in the solved maze is used to mark the path through it. There maze data files are provided. Some of them are no solutions. Your program should read these data files one by one, solve the maze and mark the path through it. 
+

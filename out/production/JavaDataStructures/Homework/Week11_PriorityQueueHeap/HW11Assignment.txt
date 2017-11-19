@@ -1,0 +1,7 @@
+In this assignment you will be writing a Java program named KeyWordList.java that creates key words to a text file. Key words will be any words that show up in the text file that are not in a provided list of words to ignore. The importance of a word will be determined by how many times the word appears in the text file. Your program implements a method as specified below:
+
+public Word[] keyWordsList(File inputFile1, int N, File inputFile2)
+
+where inputFile1 is used to generate key words list; inputFile2 contains the words to ignore, N specifies the maximum number of words to be included in the key wors list.
+
+To construct the key word list, your program will first go through the text file and determine the key words that appear and how many times each key word shows up. Each key word can be thought of as a (word, # of occurrences) pair. After collecting all the key word information, your program will find the N key words with the most occurrences to include in the word cloud. To do this, your program will put all the key words into a Priority Queue (prioritized by the number of occurrences) and then display the queue structure. When you print the queue structure, each node is represented with pairs of word and its frequency (for example, [Elephant 35]).  For this program, you are REQUIRED to implement a Priority Queue using an array-based heap.
