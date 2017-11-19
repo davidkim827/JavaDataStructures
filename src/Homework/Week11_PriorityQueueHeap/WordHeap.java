@@ -6,6 +6,7 @@ public class WordHeap extends WordHeapAbstract{
         super(maxSize);
     }
 
+    //enqueue method
     @Override
     public void enqueue(Word data) {
         if(isFull()){
@@ -18,6 +19,7 @@ public class WordHeap extends WordHeapAbstract{
         }
     }
 
+    //sort the array as data points are introduced
     public void heapUp(Word data){
         int hole = lastIndex;
         while((hole > 0) && (data.compareTo((list[(hole - 1) / 2])) > 0)){
@@ -27,6 +29,7 @@ public class WordHeap extends WordHeapAbstract{
         list[hole] = data;
     }
 
+    //dequeue method
     @Override
     public Word dequeue(){
         Word topItem = null;
@@ -44,6 +47,7 @@ public class WordHeap extends WordHeapAbstract{
         return topItem;
     }
 
+    //sorts the array as priority queue is dequeued
     public void heapDown(Word word){
         int hole = 0;
         int newHole;
@@ -57,6 +61,7 @@ public class WordHeap extends WordHeapAbstract{
         list[hole] = word;
     }
 
+    //helper method for heaping down
     public int newHole(int hole, Word word){
         int left = (hole * 2) + 1;
         int right = (hole * 2) + 2;

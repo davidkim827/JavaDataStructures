@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class KeyWordList extends KeyWordListAbstract {
 
+    //method to accept text file to analyze, and a text file to exclude words
     @Override
     public Word[] wordsList(File fileForKeyWords, File fileForWordsToIgnore) throws FileNotFoundException {
         Scanner ignore = new Scanner(fileForWordsToIgnore);
@@ -53,7 +54,10 @@ public class KeyWordList extends KeyWordListAbstract {
         return importantWords.toArray(new Word[importantWords.size()]);
     }
 
-
+    //takes the word array that was built from the aforementioned method and accepts an integer argument of how many
+    //keywords to output into an array. The integer argument is then used to pass the specified number of words to the
+    //heap. The heap automatically sorts based on the priority of number of times the keyword appeared in the text file.
+    //The heap is then dequeued and printed to console, then the remaining heap is then displayed.
     public Word[] keyWordsList(File inputFile1, int N, File inputFile2) throws FileNotFoundException {
         Word[] wordsList = wordsList(inputFile1, inputFile2);
         WordHeap heap = new WordHeap(wordsList.length);
@@ -85,9 +89,6 @@ public class KeyWordList extends KeyWordListAbstract {
     public static void main(String[] args) throws FileNotFoundException {
         KeyWordList kwl = new KeyWordList();
 
-        //File file1 = new File(args[0]);
-        //File file2 = new File(args[2]);
-        //int n = args[1];
         File file1 = new File("Week11data1.txt");
         File file2 = new File("Week11data2.txt");
         int n = 10;
