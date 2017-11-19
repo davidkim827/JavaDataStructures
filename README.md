@@ -8,13 +8,13 @@ language (excluding my practice repository located here: https://github.com/davi
 
 The following are the concepts I have learned over the weeks:
 
-	Week 1: "Review"
+	Week 1: Review
 	Week 2: Recursion
 	Week 3: Stack (Array Implementation) ADT
 	Week 4: Stack (Linked List Implementation) ADT
 	Week 5: Queue ADT
 	Week 6: Multi-Threading
-	Week 7: Implementation of Queues & Multi-Threading
+	Week 7: Implementation of Queue & Multi-Threading
 	Week 8: List ADT (Linked List Implementation)
 	Week 9: Tree ADT (Binary Search)
 	Week 10: Tree ADT (Binary Expression)
