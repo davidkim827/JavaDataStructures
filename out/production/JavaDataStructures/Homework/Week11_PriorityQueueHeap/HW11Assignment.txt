@@ -4,4 +4,71 @@ public Word[] keyWordsList(File inputFile1, int N, File inputFile2)
 
 where inputFile1 is used to generate key words list; inputFile2 contains the words to ignore, N specifies the maximum number of words to be included in the key wors list.
 
-To construct the key word list, your program will first go through the text file and determine the key words that appear and how many times each key word shows up. Each key word can be thought of as a (word, # of occurrences) pair. After collecting all the key word information, your program will find the N key words with the most occurrences to include in the word cloud. To do this, your program will put all the key words into a Priority Queue (prioritized by the number of occurrences) and then display the queue structure. When you print the queue structure, each node is represented with pairs of word and its frequency (for example, [Elephant 35]).  For this program, you are REQUIRED to implement a Priority Queue using an array-based heap.
+To construct the key word list, your program will first go through the text file and determine the key words that appear and how many times each key word shows up. Each key word can be thought of as a (word, # of occurrences) pair. However, we ignore the following words:
+   1. appear less than three (3) times (appear only once or twice);
+   2. punctuations
+   3. numbers 
+   4. the words to ignore (that are listed in the ignore file)
+
+After collecting all the key word information, your program will find the N key words with the most occurrences to include in the word cloud. To do this, your program will put all the key words (except the words in the ignore list, see above) into a Priority Queue (prioritized by the number of occurrences) and then display the queue structure (either complete or full tree). When you print the queue structure, each node is represented with pairs of word and its frequency (for example, [Elephant 35]).  For this program, you are REQUIRED to implement a Priority Queue by using an array-based heap.
+
+Two abstract classes are provided. Design two class files named WordHeap.java and KeyWordList.java, that extend WordHeapAbstract and KeyWordListAbstract, respectively. Here is more detailed explanation on the methods in the KeyWorkList class:
+
+   
+   public abstract Word[] wordsList(File fileForKeyWords, File fileForWordsToIgnore)
+
+This method gets all words from the fileForKeyWords, except the words in the ignore list, then returns words as a Word array. The word array will be used in the following method to contract a heap-priority queue. 
+   
+   
+   public abstract Word[] keyWordsList(File inputFile1, int N, File inputFile2)
+
+This method returns key word list. Within this method, you should call wordsList method and construct a heap. Then use the heap to create and return key words list. This method is also required to display the heap structure before and after creating the key word list.  Here is a sample output of the heap structure:
+  
+
+Heap structure before constructing key word list:
+=================================================
+
+                              [R:3] 
+                    [we:8] 
+                              [value:3] 
+          [and:9] 
+                              [priority:6] 
+                    [node:9] 
+                              [max:4] 
+[is:9] 
+                              [binary:6] 
+                    [heap:7] 
+                              [will:5] 
+          [to:8] 
+                              [job:3] 
+                    [has:4] 
+                                        [SiftDown:3] 
+                              [jobs:3] 
+                                        [A:3] 
+
+
+Heap structure after constructing 10 key words list:
+===================================================
+                    [A:3] 
+          [job:3] 
+                    [R:3] 
+[has:4] 
+                    [value:3] 
+          [jobs:3] 
+                    [SiftDown:3] 
+
+And output file containing key works list:
+==================================================
+[is:9]
+[and:9]
+[node:9]
+[we:8]
+[to:8]
+[heap:7]
+[priority:6]
+[binary:6]
+[will:5]
+[max:4]
+
+
+Finally, design a driver program to test your methods.( Or you can simply include the main method in the KeyWordList class to test methods)
