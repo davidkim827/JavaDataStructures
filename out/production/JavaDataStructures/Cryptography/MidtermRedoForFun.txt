@@ -1,0 +1,16 @@
+In cryptograms, each character is encoded into another. The frequency of letters in text has been studied for use in cryptanalysis, and frequency analysis in particular, dating back to the Iraqi mathematician Al-Kindi (c. 801-873 AD), who formally developed the method (the ciphers breakable by this technique go back at least to the Caesar cipher invented by Julius Caesar, so this method could have been explored in classical times). If the text is long enough, one can, as a strategy, use the frequency of occurrence of each character. The most frequently occurring character will likely be the code for an e, because e is the most frequently used letter of the English alphabet. Design a class Named CryptGram.java with the following requirements:
+
+Data Members: a Letter(it is provided) array named orderedFrequency to store frequency of the 26 alphabetic letters. (Letter[] orderedFrequency;)
+Methods:
+      public void createLetterFrequency(String text)
+      public int getFrequencyByChar(char letter)
+      public String encode(String textToBeEncoded)
+      public String decode(String textToBeDecoded)
+
+The method: createLetterFrequency, create the letter frequency from the argument passed to this method, the letter frequency array MUST by sorted by frequency, for example, the first three Letter elements in the array may look like: d[2], r[5], a[6], which means d appears in the file twice, r five time, and a six times. If the frequencies are ties, then being ordered by alphabetic order. For instance, e[9]  and c[9], c[9] should be placed before e[9].
+
+The method: getFrequencyByChar, returns the number of times the char passed as argument appears in the file
+
+The method: encode, encodes the String and returns encoded String. The text to be encoded is encrypted as follows: each character in the text will be encrypted to the character in the letter frequency array: orderedFrequency. For example, letter a or A will be encrypted to the letter of the first element in the orderedFrequency array. The letter z or Z will be encrypted to the letter of the last element in the orderedFrequency array. 
+
+The method: decode, reverse the encode process and decrypt the text (ignore cases)

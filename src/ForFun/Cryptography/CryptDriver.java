@@ -1,9 +1,10 @@
-package Cryptography;
+package ForFun.Cryptography;
 
 /**
  * Created by dk on 11/22/2017.
  */
 
+//tester meht
 public class CryptDriver {
     public static void main(String[] args){
         CryptGram cg = new CryptGram();

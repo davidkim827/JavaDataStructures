@@ -1,6 +1,4 @@
-package Cryptography;
-
-import Homework.Week11_PriorityQueueHeap.Word;
+package ForFun.Cryptography;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,6 +17,7 @@ public class CryptGram {
         counter = 0;
     }
 
+    //creates a letter frequency based off a given string text argument
     public void createLetterFrequency(String text) {
         char[] charText = text.replaceAll(" ", "").replaceAll("[^a-zA-Z]", "").toUpperCase().toCharArray();
 
@@ -76,6 +75,7 @@ public class CryptGram {
         return 1000;
     }
 
+    //encodes the given string argument based off the frequency letter array
     public String encode(String textToBeEncoded) {
         key = new int[textToBeEncoded.length()];
         String result = "";
@@ -93,6 +93,7 @@ public class CryptGram {
         return regularCase(result);
     }
 
+    //decoder method that decodes the encoded text from encode method
     public String decode(String textToBeDecoded) {
 
         for (int i = 0; i < orderedFrequency.length; i++)

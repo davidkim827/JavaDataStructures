@@ -1,4 +1,4 @@
-package Cryptography;
+package ForFun.Cryptography;
 
 /**
  * Created by dk on 11/22/2017.
@@ -27,6 +27,7 @@ public class Letter implements Comparable<Letter> {
         return frequency;
     }
 
+    //added setter method to provide an easy access to manipulate frequencies for decoding method
     public void setFrequency(int frequency){
         this.frequency = frequency;
     }
