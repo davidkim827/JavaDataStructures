@@ -19,3 +19,6 @@ The following are the concepts I have learned over the weeks:
 	Week 9: Tree ADT (Binary Search)
 	Week 10: Tree ADT (Binary Expression)
 	Week 11: Priority Queue w/ Heap
+	Week 12: Graph ADT (Digraph)
+
+All work was directed under Dr. Xue Bai of NVCC. Thank you for the class!
