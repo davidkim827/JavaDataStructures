@@ -1,0 +1,22 @@
+In computer science, a graph is an abstract data type that is meant to implement the undirected graph and directed graph concepts from mathematics, specifically the field of graph theory.
+
+A graph data structure consists of a set of vertices or nodes, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph (digraph). These pairs are known as edges, arcs, or lines for an undirected graph and as arrows, directed edges, directed arcs, or directed lines for a directed graph. The vertices may be part of the graph structure, or may be external entities represented by integer indices or references.
+Formally, a graph G is defined as follows:
+G = (V, E)
+
+Where V is a finite, nonempty set of vertices
+E is a set of edges represented with pairs of vertices
+
+For example: V={A,B,C,D}
+                        E={(A,B), (A,D), (B,C), (B,D)}
+
+There are many ways to implement a graph data structure, array, list, dictionary, etc. However, for this lab assignment, you are required to use array to implement a digraph. 
+
+As we discussed in class, the typical operations should include:
+isEmpty, isFull, addVertex, removeVertex (will implement this one in next lab assignment), adEdge, clearMark, markVertex, isMarked, indexOf,getToVertices, isPath, unreachableVertices 
+
+After implementing the data structure (named LetterGraph.java) and operations, design a driver program to create a graph object from the data file and test all operations.
+
+Data file:
+The first line includes all vertices-each letter is a vertex
+Followed by all edges-represented with pairs of letters

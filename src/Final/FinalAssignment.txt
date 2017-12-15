@@ -1,0 +1,71 @@
+Problem 1 (15 points):
+Create a program named CountBinary.java and copy the content from CountBinary.txt and implement the method countBinary:
+
+   public static void countBinary(int n) 
+
+that accepts an integer n as a parameter and prints all binary numbers that have n digits in ascending order, printing each value on a separate line. All n digits should be shown for all numbers, including leading zeros if necessary. You may assume that n is non-negative. If n is 0, a blank line of output should be produced. Do not use a loop in your solution; implement it recursively.
+
+countBinary(1);
+0
+1
+
+countBinary(2);
+00
+01
+10
+11
+
+countBinary(3);
+000
+001
+010
+011
+100
+101
+110
+111
+
+Problem 2 (25 points):
+Create a class named MyTree.java and copy the content from MyTree.txt. Then implement the method doublePositives that doubles all data values greater than 0 in a binary tree of integers. For example, the before and after of a call to doublePositives on a sample tree are shown below:
+
+Before call	     	After call
+            +----+
+            | -9 |
+            +----+
+           /      \
+          /        \
+      +----+      +----+
+      |  3 |      | 15 |
+      +----+      +----+
+     /           /      \
+    /           /        \
++----+      +----+      +----+
+|  0 |      | 12 |      | 24 |
++----+      +----+      +----+
+           /      \
+          /        \
+      +----+      +----+
+      |  6 |      | -3 |
+      +----+      +----+
+            +----+
+            | -9 |
+            +----+
+           /      \
+          /        \
+      +----+      +----+
+      |  6 |      | 30 |
+      +----+      +----+
+     /           /      \
+    /           /        \
++----+      +----+      +----+
+|  0 |      | 24 |      | 48 |
++----+      +----+      +----+
+           /      \
+          /        \
+      +----+      +----+
+      | 12 |      | -3 |
+      +----+      +----+
+
+
+Problem 3 (25 points):
+Create a class named StackEquals.java then copy the content from StackEquals.txt. Implement the method equals that takes as parameters two stacks of integers and returns true if the two stacks are equal or returns false otherwise. To be considered equal, the two stacks would have to store the same sequence of integer values in the same order. Your method is to examine the two stacks but must return them to their original state before terminating. You may use one stack as auxiliary storage.

@@ -1,7 +1,6 @@
 package Labs.Week1_BasicsReview;
 
 import java.util.*;
-import java.util.Random;
 
 public class REVIEWArray2DPrint {
 
@@ -35,5 +34,4 @@ public class REVIEWArray2DPrint {
         for (int z = 0; z < arr.length; z++)
             System.out.print("-------");
     }
-
 }
