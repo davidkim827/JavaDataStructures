@@ -1,4 +1,7 @@
 # JavaDataStructures
+
+<b><i>Use of any code in this repo in any form for academic purposes is considered cheating, which is not only unfair to your classmates, but as well as yourself. Use at your own risk.</i></b>
+
 All coded material from Java Data Structures class at NVCC (CSC202) are found in the 'src' folder.
 
 All development was through the IntelliJ IDE.
